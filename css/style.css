@@ -983,3 +983,78 @@ blockquote {
         margin-top: 40px;
     }
 }
+
+.rectangle, .triangle, .circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	z-inde: 1；
+}
+
+.circle {
+    opacity: .5;
+    width: 70px;
+    animation-name: bubble3;
+    animation-duration: 18s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.rectangle {
+    opacity: .5;
+    width: 80px;
+    animation-name: bubble;
+    animation-duration: 23s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.triangle {
+    opacity: .5;
+    width: 100px;
+    animation-name: bubble2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 22s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bubble {
+    from {
+        transform: translate(-100px, 300px) rotate(0);
+    }
+    to {
+        transform: translate(600px, -50px) rotate(300deg);
+    }
+}
+
+@keyframes bubble2 {
+    from {
+        transform: translate(-50px, -150px) rotate(0);
+    }
+    to {
+        transform: translate(1000px, 650px) rotate(800deg);
+    }
+}
+
+@keyframes bubble3 {
+    0% {
+        opacity: 0;
+        transform: translate(700px, 600px);
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(750px, -200px);
+    }
+}
+.portfolioContainer{
+  z-inde: 2；
+}
