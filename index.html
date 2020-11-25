@@ -8,6 +8,9 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="MyraStudio" />
+		
+		<link rel="stylesheet" type="text/css" href="video.css"/>
+
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -95,26 +98,17 @@
                 <div class="port portfolio-masonry m-b-30">
                     <div class="portfolioContainer row">
                         <div class="col-lg-4 design personal">
-                            <a data-toggle="modal" data-target=".bs-example-modal-lg">模态框
-    <!-- Large modal -->
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <video src="http://1253473436.vod2.myqcloud.com/2e3c1425vodgzp1253473436/c2534a7b5285890805959123779/IMgi1TkTwEwA.mp4" height="500" controls preload="metadata"></video>
-    </div>
-  </div>
-</div>
-                                <div class="portfolio-box">
+                            
+                                <div class="m-video" data-src="http://1253473436.vod2.myqcloud.com/2e3c1425vodgzp1253473436/c2534a7b5285890805959123779/IMgi1TkTwEwA.mp4">
                                     <div class="portfolio-box-img">
-                                        <img src="images/works/img1.jpg" alt="member-image" class="img-fluid" border="0">
+                                        <img src="images/works/img1.jpg" class="img-fluid" alt="member-image">
                                     </div>
-									</a>
                                     <div class="portfolio-box-detail">
                                         <p>Media, Icons</p>
                                         <h4>Open Imagination</h4>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </div>
 
                         <div class="col-lg-4 mockup personal android">
@@ -373,6 +367,8 @@
         <!-- END FOOTER -->
 
         <!-- JAVASCRIPTS -->
+		<script src="js/jquery.min.js"></script>
+<script src="js/pingzi_video.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <!-- isotope filter plugin -->
